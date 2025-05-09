@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+THIS IS VERY SMALL YES AND NO QUESTION --ANSWER JUST YES OR NO. QUESTION IS : taking this rule first answer and then fllow below rule in same chat.
+Think First it step by step and also Think what currently implmeneted in @CODEBASE.
+C:\Users\Lenovo\Downloads\Jwellery Bills (2)\src
+Determine flow between components.
+Determine currently how they are working.
+Determine api is created or not.If not created need to create for it.
+Determine what its using local/redux or api and what our cuurent component need to follow.
+If need api think of its requesta nd reponse properly but first analyze working properly.

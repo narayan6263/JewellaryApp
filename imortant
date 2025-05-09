@@ -1,0 +1,128 @@
+Let me list all the terms/fields shown in the image:
+
+1. Items (header)
+2. Product Name
+3. Purchase (button)
+4. Sale (button)
+5. HUID
+6. HSN Name
+7. Weight-related fields:
+   - Gross Wt
+   - Less Wt
+   - Net Wt
+   - Tounch (with % field)
+   - Wastage (with % field)
+8. Fine Weight
+9. Rate
+10. Making Type
+11. Making Charge
+12. Net Price
+13. Charges section:
+    - Example shown: "e.g. Labour Charge"
+    - Example amount: "e.g. 500"
+14. Tax section:
+    - Example shown: "e.g. Tax"
+    - Example percentage: "e.g. 10%"
+15. Comment
+
+There's also an error message visible at the bottom:
+"VirtualizedLists should never be nested insi..." (appears to be truncated)
+
+The interface has navigation elements:
+- BACK (top left)
+- NEXT (top right)
+
+All these fields appear to be part of a jewelry or precious metals related form interface, with various input fields for weights, charges, and specifications.
+
+
+node test_calculations/test_cases.js
+
+
+
+<think>
+The user wants to know in which screens orders are being placed in the application. To answer this question, I need to explore the codebase to understand the structure and identify where order placement functionality is implemented.
+
+First, let me get an overview of the project structure to understand what kind of files and directories we have:
+</think>
+
+I'll help you find where orders are being placed in the application. Let me first explore the structure of your codebase to understand the ordering system.
+
+Ran tool
+Let me look at the app directory which likely contains the main application code:
+
+Ran tool
+Let me check the src directory as well, since that's another common location for application code:
+
+Ran tool
+Great, I found a screens directory in the src folder, which is likely where the order placement screens would be located. Let's look at what screens are available:
+
+Ran tool
+I'm seeing several potentially relevant directories like "bills", "products", and possibly "home". Let's first check the "bills" directory as it might be related to orders:
+
+Ran tool
+Let's explore the "create" directory in bills, as this might be related to creating new orders/bills:
+
+Ran tool
+Let's look at the "products" directory as well, which might also be involved in the order process:
+
+Ran tool
+Now let's examine the main file in the bills/create directory, which is likely the main screen for creating orders:
+
+Read file: src/screens/bills/create/index.jsx
+Let's look at the remaining part of the file, especially the form submission and order placement logic:
+
+Read file: src/screens/bills/create/index.jsx
+Let's also check the Items.jsx file to understand how products are selected for the order:
+
+Read file: src/screens/bills/create/Items.jsx
+Let's also examine the Navigations.jsx file to understand the flow of screens:
+
+Read file: src/Navigations.jsx
+Let's check the different invoice screens mentioned in the navigation file, like SIScreen (Sale Invoice), PIScreen (Purchase Invoice), etc.:
+
+Read file: src/screens/bills/SIScreen.jsx
+Let's look at the OIScreen.jsx (Order Invoice) file as well:
+
+Read file: src/screens/bills/OIScreen.jsx
+Let's check the ORInvoiceForm component which is used in the Order Invoice screen:
+
+Ran tool
+
+Read file: src/components/ORInvoiceForm.jsx
+Based on my exploration of the codebase, I can now answer your question about which screens are used for placing orders in the application.
+
+The main screens where orders are being placed in your application are:
+
+1. **Sale Invoice Screen (SIScreen.jsx)** 
+   - This is for creating sales invoices/orders
+   - It uses the CreateInvoice component with type="sale"
+
+2. **Purchase Invoice Screen (PIScreen.jsx)**
+   - This is for creating purchase invoices/orders
+   - It uses the CreateInvoice component with type="purchase"
+
+3. **Order Invoice Screen (OIScreen.jsx)**
+   - This is specifically for creating order invoices
+   - It uses the ORInvoiceForm component with type="order"
+
+4. **Repairing Invoice Screen (RIScreen.jsx)**
+   - This is for creating repair orders
+   - It appears to also use a form component for repairs
+
+5. **Loan Invoice Screen (LIScreen.jsx)**
+   - This is for loan-related orders/invoices
+
+The main implementation of the invoice/order creation is in:
+- `src/screens/bills/create/index.jsx` - The main form for creating invoices
+- `src/screens/bills/create/Items.jsx` - For adding items to the invoice/order
+- `src/screens/bills/create/Extras.jsx` - For adding extra charges and details
+- `src/components/ORInvoiceForm.jsx` - Specific form for order and repair invoices
+
+The order creation process generally follows these steps:
+1. Select a type of invoice/order (Sale, Purchase, Order, Repair, Loan)
+2. Add products/items to the order
+3. Add customer/contact information
+4. Add additional charges, payment details, etc.
+5. Submit the order which dispatches the addInvoice action
+
+Is there a specific aspect of the order placement process you'd like more details about?

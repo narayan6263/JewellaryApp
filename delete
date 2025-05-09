@@ -1,0 +1,3634 @@
+{
+	"info": {
+		"_postman_id": "490ac8ba-a963-4b76-b069-02ee856319b9",
+		"name": "JBM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32107191"
+	},
+	"item": [
+		{
+			"name": "get-product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-product",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-product"
+					],
+					"query": [
+						{
+							"key": "metal_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "product_name",
+							"value": "gg",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-stock-transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-stock-transaction?product_id=9&type=2",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-stock-transaction"
+					],
+					"query": [
+						{
+							"key": "product_id",
+							"value": "9"
+						},
+						{
+							"key": "type",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product-detail-by-id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/product-detail-by-id?id=9",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"product-detail-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-product-group",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-product-group",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-product-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-role",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-role",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-user-contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-user-contact",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-user-contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-user-profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-user-profile",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-user-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-metals",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-metals",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-metals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-metals-by-id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-metals-by-id?id=7",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-metals-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-metal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/delete-metal?id=7",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"delete-metal"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-varient",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/delete-varient?id=7",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"delete-varient"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "states",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/states",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"states"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "city",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/city?state_id=21",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"city"
+					],
+					"query": [
+						{
+							"key": "state_id",
+							"value": "21"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "neha singh",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "singh.neha.singh@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/register",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"man@gmail.com\",\r\n    \"password\": \"sss\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/login",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set-mpin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mpin",
+							"value": "4545",
+							"type": "text"
+						},
+						{
+							"key": "mpin_confirmation",
+							"value": "4545",
+							"type": "text"
+						},
+						{
+							"key": "is_mpin",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/set-mpin",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"set-mpin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mpin-login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mpin",
+							"value": "4545",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/mpin-login",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"mpin-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-user-contacts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test test",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8754785470",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "indore",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "role_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "state_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "city_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": "452001",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gold_fine",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "silver_fine",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"description": "not required",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/create-user-contacts",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"create-user-contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-product-group",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "testinggroup",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/create-product-group",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"create-product-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile-update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "testingjlkcjljgroup",
+							"type": "text"
+						},
+						{
+							"key": "business_name",
+							"value": "jbm",
+							"type": "text"
+						},
+						{
+							"key": "business_phone",
+							"value": "8745874587",
+							"type": "text"
+						},
+						{
+							"key": "business_email",
+							"value": "business@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "logo",
+							"type": "file",
+							"src": "/C:/Users/Neha Singh/Downloads/WhatsApp Image 2024-10-29 at 6.36.32 PM.jpeg"
+						},
+						{
+							"key": "gstin",
+							"value": "565fd4dfg",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "indore",
+							"type": "text"
+						},
+						{
+							"key": "state_id",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "city_id",
+							"value": "2229",
+							"type": "text"
+						},
+						{
+							"key": "pincode",
+							"value": "452001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/user-profile-update",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-profile-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "metal-price-update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "metal_id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "235",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Diamond",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/metal-price-update",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"metal-price-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bulk-price-update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"price\":\"120\",\r\n        \"metal_id\":15,\r\n        \"label\":\"Gold\",\r\n        \"variation_data\":[\r\n            {\r\n                \"name\":\"24 Caret\",\r\n                \"price\":\"250\"\r\n            }\r\n            \r\n        ]\r\n    },\r\n    {\r\n        \"price\":\"200\",\r\n        \"metal_id\":16,\r\n        \"label\":\"Silver\",\r\n        \"variation_data\":[\r\n            {\r\n                \"name\":\"Hu\",\r\n                \"price\":\"29\"\r\n                }\r\n            ]\r\n        }\r\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/bulk-price-update",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"bulk-price-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "TESTINGg",
+							"type": "text"
+						},
+						{
+							"key": "huid",
+							"value": "235",
+							"type": "text"
+						},
+						{
+							"key": "hsn_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "bar_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "asdasdsad",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "sale_gross_weight",
+							"value": "45",
+							"type": "text"
+						},
+						{
+							"key": "sale_less_weight",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sale_net_weight",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "sale_wastage",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "sale_tounch",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "sale_fine_weight",
+							"value": "60",
+							"type": "text"
+						},
+						{
+							"key": "sale_rate",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "sale_making_type",
+							"value": "chgch",
+							"type": "text"
+						},
+						{
+							"key": "sale_net_price",
+							"value": "4545",
+							"type": "text"
+						},
+						{
+							"key": "sale_charges_json",
+							"value": "[{\"amount\":200,\"name\":'stone'}]",
+							"type": "text"
+						},
+						{
+							"key": "sale_tax_json",
+							"value": "[{\"amount\":200,\"name\":'stone'}]",
+							"type": "text"
+						},
+						{
+							"key": "purchase_gross_weight",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_less_weight",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_net_weight",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_wastage",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_tounch",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_fine_weight",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_rate",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_making_type",
+							"value": "ggjggggggggggg",
+							"type": "text"
+						},
+						{
+							"key": "purchase_net_price",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_charges_json",
+							"value": "[{\"amount\":200,\"name\":'stone'}]",
+							"type": "text"
+						},
+						{
+							"key": "purchase_tax_json",
+							"value": "[{\"amount\":200,\"name\":'stone'}]",
+							"type": "text"
+						},
+						{
+							"key": "purchase_piece",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sale_piece",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "purchase_making_charges",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sale_making_charges",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/create-product",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"create-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "TESTING",
+							"type": "text"
+						},
+						{
+							"key": "huid",
+							"value": "235",
+							"type": "text"
+						},
+						{
+							"key": "hsn_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "bar_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "asdasdsad",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "sale_gross_weight",
+							"value": "45",
+							"type": "text"
+						},
+						{
+							"key": "sale_less_weight",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sale_net_weight",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "sale_wastage",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "sale_tounch",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "sale_fine_weight",
+							"value": "60",
+							"type": "text"
+						},
+						{
+							"key": "sale_rate",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "sale_making_type",
+							"value": "chgch",
+							"type": "text"
+						},
+						{
+							"key": "sale_net_price",
+							"value": "4545",
+							"type": "text"
+						},
+						{
+							"key": "sale_charges_json",
+							"value": "[{\"amount\":200,\"name\":'stone'}]",
+							"type": "text"
+						},
+						{
+							"key": "sale_tax_json",
+							"value": "[{\"amount\":200,\"name\":'stone'}]",
+							"type": "text"
+						},
+						{
+							"key": "purchase_gross_weight",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_less_weight",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_net_weight",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_wastage",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_tounch",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_fine_weight",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_rate",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_making_type",
+							"value": "ggjggggggggggg",
+							"type": "text"
+						},
+						{
+							"key": "purchase_net_price",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "purchase_charges_json",
+							"value": "[{\"amount\":200,\"name\":'stone'}]",
+							"type": "text"
+						},
+						{
+							"key": "purchase_tax_json",
+							"value": "[{\"amount\":200,\"name\":'stone'}]",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "purchase_piece",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sale_piece",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "purchase_making_charges",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sale_making_charges",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/update-product",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"update-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manage-stock",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tounch",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "gross_weight",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "wastage",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "charges_json",
+							"value": "[{\"amount\":200,\"name\":'stone'}]",
+							"type": "text"
+						},
+						{
+							"key": "fine_weight",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "testing",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"description": "1 = sale,2 = purchase",
+							"type": "text"
+						},
+						{
+							"key": "net_price",
+							"value": "4545",
+							"type": "text"
+						},
+						{
+							"key": "user_contact_id",
+							"value": "1",
+							"description": "optional",
+							"type": "text"
+						},
+						{
+							"key": "product_id_by",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "stock_entry",
+							"value": "",
+							"description": "1 = by purchase, 2 = manually, 3 = by item",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/manage-stock",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"manage-stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-invoice",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_contact_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "payment_mode",
+							"value": "cash",
+							"type": "text"
+						},
+						{
+							"key": "payment_date",
+							"value": "2024-12-15",
+							"type": "text"
+						},
+						{
+							"key": "bill_total",
+							"value": "5000",
+							"type": "text"
+						},
+						{
+							"key": "amount_paid",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "tax",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "additional_charges",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "total",
+							"value": "1500",
+							"type": "text"
+						},
+						{
+							"key": "invoice_type",
+							"value": "1",
+							"description": "1=sale, 2=purchase",
+							"type": "text"
+						},
+						{
+							"key": "item",
+							"value": "[\n  {\n    \"product_id\": 1,\n    \"hsn_id\": 1,\n    \"tounch\": 5,\n    \"wastage\": 5,\n    \"gross_weight\": 50,\n    \"net_price\": 1000,\n    \"fine_weight\": 150,\n    \"size\": 22,\n    \"show_size_in_bill\": 1\n  },\n  {\n    \"product_id\": 2,\n    \"hsn_id\": 1,\n    \"tounch\": 5,\n    \"wastage\": 5,\n    \"gross_weight\": 50,\n    \"net_price\": 1000,\n    \"fine_weight\": 150,\n    \"size\": 23,\n    \"show_size_in_bill\": 1\n  }\n]\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/add-invoice",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"add-invoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-contact-invoice-history",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/user-contact-invoice-history?user_contact_id=1",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-contact-invoice-history"
+					],
+					"query": [
+						{
+							"key": "user_contact_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-loan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_contact_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "valuation_amount",
+							"value": "42500",
+							"type": "text"
+						},
+						{
+							"key": "loan_amount",
+							"value": "600",
+							"type": "text"
+						},
+						{
+							"key": "interest_type",
+							"value": "1",
+							"description": "1=compound,2=simple",
+							"type": "text"
+						},
+						{
+							"key": "interest_rate",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "interest_upto",
+							"value": "2025-01-30",
+							"type": "text"
+						},
+						{
+							"key": "interest_amount",
+							"value": "822.33",
+							"type": "text"
+						},
+						{
+							"key": "item",
+							"value": "[{\"fine_weight\":\"212.50\",\"net_price\":\"42500.00\",\"name\":\"Rings\",\"product_id\":1,\"rate\":\"200\",\"gross_weight\":\"250\",\"tounch\":\"85\",\"comment\":\"Dhdn\"}]",
+							"type": "text"
+						},
+						{
+							"key": "image0",
+							"type": "file",
+							"src": "aQgYqB4vX/wp14443402-thar-roxx-wallpapers.jpg"
+						},
+						{
+							"key": "image1",
+							"type": "file",
+							"src": "vSjGFgIX9/wp14443402-thar-roxx-wallpapers.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/add-loan",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"add-loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-user-contacts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/delete-user-contacts?id=1",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"delete-user-contacts"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-user-contacts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test test",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8754785470",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "indore",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "role_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "state_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "city_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": "452001",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gold_fine",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "silver_fine",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"description": "not required",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/update-user-contacts",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"update-user-contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-loans",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-loans",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-loans-by-id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-loans-by-id?id=1",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-loans-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-loans-by-contact-id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-loans-by-contact-id?user_contact_id=6",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-loans-by-contact-id"
+					],
+					"query": [
+						{
+							"key": "user_contact_id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-user-history",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-user-history?user_contact_id=2",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-user-history"
+					],
+					"query": [
+						{
+							"key": "user_contact_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rate-cut",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_contact_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "metal_id",
+							"value": "1",
+							"description": "gold, silver id",
+							"type": "text"
+						},
+						{
+							"key": "fine_weight",
+							"value": "1.2",
+							"type": "text"
+						},
+						{
+							"key": "balance",
+							"value": "5000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/rate-cut",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"rate-cut"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "convert-to-metal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_contact_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "metal_id",
+							"value": "1",
+							"description": "gold, silver id",
+							"type": "text"
+						},
+						{
+							"key": "fine_weight",
+							"value": "1.2",
+							"type": "text"
+						},
+						{
+							"key": "balance",
+							"value": "5000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/convert-to-metal",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"convert-to-metal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-invoice-home",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-invoice-home",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-invoice-home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-loan-home",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-loan-home",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-loan-home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-interest-till-today",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-interest-till-today?loan_id=1",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-interest-till-today"
+					],
+					"query": [
+						{
+							"key": "loan_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-contact-detail-data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-contact-detail-data?user_contact_id=2",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-contact-detail-data"
+					],
+					"query": [
+						{
+							"key": "user_contact_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "freeze-loan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "new_amount",
+							"value": "1200",
+							"type": "text"
+						},
+						{
+							"key": "new_amount_type",
+							"value": "2",
+							"description": "1=given, 2=received",
+							"type": "text"
+						},
+						{
+							"key": "interest_amount",
+							"value": "41636",
+							"type": "text"
+						},
+						{
+							"key": "interest_upto",
+							"value": "2025-04-10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/freeze-loan",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"freeze-loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delivered loan item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/delivered",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"delivered"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-order-status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/add-order-status?name=new Order&color=%2300000",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"add-order-status"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "new Order"
+						},
+						{
+							"key": "color",
+							"value": "#00000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-order-status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "new order",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "#ffffff",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/update-order-status",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"update-order-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-order-status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/delete-order-status",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"delete-order-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-order-status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-order-status",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-order-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-order-status-by-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-order-status-by-id?status_id=3",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-order-status-by-id"
+					],
+					"query": [
+						{
+							"key": "status_id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "groups-list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/groups/list",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"groups",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "group/details/{group_id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/group/details/2",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"group",
+						"details",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bill-detail-by-id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/bill-detail-by-id?id=2",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"bill-detail-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "invoiceType",
+							"value": "order",
+							"type": "text"
+						},
+						{
+							"key": "client",
+							"value": "{\n\"id\": \"11\", \n\"name\": \"Anuj malviya\",\n\"role_id\": \"1\" \n}",
+							"type": "text"
+						},
+						{
+							"key": "selectedProduct",
+							"value": "[\n  {\n    \"name\": \"Gold Ring\",\n    \"product_id\": \"3\",\n    \"size\": \"7\",\n    \"gross_weight\": 12.5,\n    \"less_weight\": 0.3,\n    \"net_weight\": 12.2,\n    \"tounch\": 91.6,\n    \"wastage\": 5,\n    \"fine_weight\": 11.8,\n    \"rate\": 6400,\n    \"metal_value\": 75520,\n    \"making_type\": {\n      \"value\": \"per_gram\",\n      \"label\": \"Per Gram\"\n    },\n    \"making_charge\": 150,\n    \"making_amount\": 1830,\n    \"polishing\": 100,\n    \"stone_setting\": 250,\n    \"additional_charges\": 0,\n    \"subtotal\": 77700,\n    \"tax\": 3,\n    \"tax_amount\": 2331,\n    \"final_amount\": 80031\n  }\n]\n",
+							"type": "text"
+						},
+						{
+							"key": "totalPrice",
+							"value": "899",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "QaCVqQ35s/dummy-image.jpg"
+						},
+						{
+							"key": "additional_photo",
+							"type": "file",
+							"src": "Tb64MEll3/unnamed.jpg"
+						},
+						{
+							"key": "huid",
+							"value": "45ere",
+							"type": "text"
+						},
+						{
+							"key": "hsn_id",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "asdasdsa",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "in_progress",
+							"type": "text"
+						},
+						{
+							"key": "profile_id",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "payment_mode",
+							"value": "cash",
+							"type": "text"
+						},
+						{
+							"key": "amount_paid",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "bill_display_settings",
+							"value": "{\n    \"showSizeInBill\": true,\n    \"showWeightInBill\": true,\n    \"showRateInBill\": true,\n    \"showMakingInBill\": true,\n    \"showTaxInBill\": true,\n    \"showCommentInBill\": false\n  }",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/create",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "invoiceType",
+							"value": "order",
+							"type": "text"
+						},
+						{
+							"key": "client",
+							"value": "{\n\"id\": \"11\", \n\"name\": \"Anuj malviya\",\n\"role_id\": \"1\" \n}",
+							"type": "text"
+						},
+						{
+							"key": "selectedProduct",
+							"value": "[\n  {\n    \"name\": \"Gold Ring\",\n    \"product_id\": \"3\",\n    \"size\": \"7\",\n    \"gross_weight\": 12.5,\n    \"less_weight\": 0.3,\n    \"net_weight\": 12.2,\n    \"tounch\": 91.6,\n    \"wastage\": 5,\n    \"fine_weight\": 11.8,\n    \"rate\": 6400,\n    \"metal_value\": 75520,\n    \"making_type\": {\n      \"value\": \"per_gram\",\n      \"label\": \"Per Gram\"\n    },\n    \"making_charge\": 150,\n    \"making_amount\": 1830,\n    \"polishing\": 100,\n    \"stone_setting\": 250,\n    \"additional_charges\": 0,\n    \"subtotal\": 77700,\n    \"tax\": 3,\n    \"tax_amount\": 2331,\n    \"final_amount\": 80031\n  }\n]\n",
+							"type": "text"
+						},
+						{
+							"key": "totalPrice",
+							"value": "899",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "QaCVqQ35s/dummy-image.jpg"
+						},
+						{
+							"key": "additional_photo",
+							"type": "file",
+							"src": "Tb64MEll3/unnamed.jpg"
+						},
+						{
+							"key": "huid",
+							"value": "45ere",
+							"type": "text"
+						},
+						{
+							"key": "hsn_id",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "asdasdsa",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "in_progress",
+							"type": "text"
+						},
+						{
+							"key": "profile_id",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "payment_mode",
+							"value": "cash",
+							"type": "text"
+						},
+						{
+							"key": "amount_paid",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "bill_display_settings",
+							"value": "{\n    \"showSizeInBill\": true,\n    \"showWeightInBill\": true,\n    \"showRateInBill\": true,\n    \"showMakingInBill\": true,\n    \"showTaxInBill\": true,\n    \"showCommentInBill\": false\n  }",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/update/3",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"update",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-loan-cash-transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2025-04-24",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/add-loan-cash-transaction",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"add-loan-cash-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculate-loan-interest",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "base_amount",
+							"value": "5000",
+							"type": "text"
+						},
+						{
+							"key": "interest_rate",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2025-01-13",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2025-04-24",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/calculate-loan-interest",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"calculate-loan-interest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-bill",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "huid",
+							"value": "khjhfdu899",
+							"type": "text"
+						},
+						{
+							"key": "hsn_id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "77",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "fsdfsdf",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "dasdas",
+							"type": "text"
+						},
+						{
+							"key": "gross_weight",
+							"value": "233",
+							"type": "text"
+						},
+						{
+							"key": "less_weight",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "net_weight",
+							"value": "345",
+							"type": "text"
+						},
+						{
+							"key": "wastage",
+							"value": "33",
+							"type": "text"
+						},
+						{
+							"key": "tounch",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "fine_weight",
+							"value": "333",
+							"type": "text"
+						},
+						{
+							"key": "rate",
+							"value": "{\"rate\":4343}",
+							"type": "text"
+						},
+						{
+							"key": "making_type",
+							"value": "{\"rate\":4343}",
+							"type": "text"
+						},
+						{
+							"key": "making_charge",
+							"value": "787",
+							"type": "text"
+						},
+						{
+							"key": "metal_value",
+							"value": "33",
+							"type": "text"
+						},
+						{
+							"key": "cutting_enabled",
+							"value": "yes",
+							"type": "text"
+						},
+						{
+							"key": "interest_enabled",
+							"value": "no",
+							"type": "text"
+						},
+						{
+							"key": "interest_type",
+							"value": "{\"rate\":4343}",
+							"type": "text"
+						},
+						{
+							"key": "interest_rate",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "interest_amount",
+							"value": "456",
+							"type": "text"
+						},
+						{
+							"key": "bill_date",
+							"value": "2024-03-23",
+							"type": "text"
+						},
+						{
+							"key": "payment_date",
+							"value": "2025-09-10",
+							"type": "text"
+						},
+						{
+							"key": "interest_start_date",
+							"value": "2025-09-10",
+							"type": "text"
+						},
+						{
+							"key": "grace_period_enabled",
+							"value": "no",
+							"type": "text"
+						},
+						{
+							"key": "grace_period_days",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "interest_notes",
+							"value": "erwerwer",
+							"type": "text"
+						},
+						{
+							"key": "charges_json",
+							"value": "{\"rate\":4343}",
+							"type": "text"
+						},
+						{
+							"key": "tax_json",
+							"value": "{\"rate\":4343}",
+							"type": "text"
+						},
+						{
+							"key": "custom_fields",
+							"value": "{\"rate\":4343}",
+							"type": "text"
+						},
+						{
+							"key": "bill_display_settings",
+							"value": "{\"rate\":4343}",
+							"type": "text"
+						},
+						{
+							"key": "payment_history",
+							"value": "{\"rate\":4343}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "dsfdsf",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "M5zHAqAiR/unnamed.jpg"
+						},
+						{
+							"key": "additional_image",
+							"type": "file",
+							"src": "mW1-rcCus/dummy-image.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/update-bill",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"update-bill"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-loan-balance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "transaction_type",
+							"value": "freeze",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "1000.00",
+							"type": "text"
+						},
+						{
+							"key": "new_balance",
+							"value": "5000.00",
+							"type": "text"
+						},
+						{
+							"key": "transaction_date",
+							"value": "2025-04-25",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "M5zHAqAiR/unnamed.jpg"
+						},
+						{
+							"key": "additional_image",
+							"type": "file",
+							"src": "mW1-rcCus/dummy-image.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/update-loan-balance",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"update-loan-balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logs/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userName",
+							"value": "Abhi",
+							"type": "text"
+						},
+						{
+							"key": "productName",
+							"value": "Gold Ring",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "loan",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "50.00",
+							"type": "text"
+						},
+						{
+							"key": "invoiceId",
+							"value": "optional_invoice_id",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "CREATE",
+							"type": "text"
+						},
+						{
+							"key": "entityType",
+							"value": "LOAN",
+							"type": "text"
+						},
+						{
+							"key": "timestamp",
+							"value": "2024-03-21",
+							"type": "text"
+						},
+						{
+							"key": "metadata",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/logs/create",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"logs",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "members/{memberId}/assigned-products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/members/1/assigned-products",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"members",
+						"1",
+						"assigned-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loan/{id}/current-balance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/loan/1/current-balance",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"loan",
+						"1",
+						"current-balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/list/1",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"list",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invoice-list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/invoice-list/",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"invoice-list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-loan-cash-transactions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/get-loan-cash-transactions/1",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-loan-cash-transactions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inventory/list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/inventory/list",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"inventory",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inventory/details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/inventory/details/1",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"inventory",
+						"details",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logs/fetch",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "43|vNEGOgvpsAjmn5RvUoFR1vxiDG1maQhTZtOoWnCA2f19ec37",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/logs/fetch",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"logs",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.theskillsocean.com/api/calculate-daily-interest",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.theskillsocean.com/api/calculate-daily-interest",
+					"protocol": "https",
+					"host": [
+						"app",
+						"theskillsocean",
+						"com"
+					],
+					"path": [
+						"api",
+						"calculate-daily-interest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

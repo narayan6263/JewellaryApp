@@ -19,6 +19,7 @@ import { GroupContext } from "@/src/screens/groups/GroupsScreen";
 import ShowToast from "@/src/components/common/ShowToast";
 import { ApiRequest } from "@/src/utils/api";
 import { MANAGE_GROUPS_API } from "@/src/utils/api/endpoints";
+import PlusButton from "@/src/components/common/buttons/PlusButton";
 
 const API_BASE_URL = '/api/v1';
 
@@ -129,7 +130,7 @@ const CreateContactForm = ({
   const handleAssignGroups = async () => {
     try {
       const groupIds = info.selectedGroups.map(group => group.value).filter(Boolean);
-      
+
       if (groupIds.length === 0) {
         ShowToast('Please select at least one group');
         return;
@@ -161,8 +162,8 @@ const CreateContactForm = ({
         ...info,
         role_id: info?.role?.value,
         city_id: info?.city?.value,
-          state_id: info?.state?.value
-        };
+        state_id: info?.state?.value
+      };
 
       delete payload.role;
       delete payload.state;
@@ -173,7 +174,7 @@ const CreateContactForm = ({
         manageContactList({
           payload: updateData ? { ...payload, id: updateData.id } : payload,
           callback: () => goBack(),
-            isUpdate: !!updateData,
+          isUpdate: !!updateData,
         })
       );
     } else {
@@ -206,7 +207,7 @@ const CreateContactForm = ({
   useEffect(() => {
     setInfo((prev) => {
       let updateInfo = { ...prev };
-      
+
       if (!isFromInvoice && groups) {
         const targetCustomer = groups.find((customer) =>
           updateData
@@ -373,6 +374,12 @@ const CreateContactForm = ({
             <Text className="text-primary font-semibold uppercase tracking-wider">
               Groups
             </Text>
+            <TouchableOpacity onPress={() => navigation.navigate("NewContact")} className="bg-primary   flex justify-center items-center px-2 py-2 rounded-md shadow-xl z-50">
+ 
+
+              <Text className='text-white'>Create New Contact</Text>
+
+            </TouchableOpacity>
           </View>
 
           {/* Existing Groups Selection */}
@@ -401,16 +408,16 @@ const CreateContactForm = ({
           </View>
 
           {/* Add New Group Button */}
-              <TouchableOpacity
+          <TouchableOpacity
             onPress={() => setIsGroupModalVisible(true)}
-                activeOpacity={0.7}
+            activeOpacity={0.7}
             className="bg-primary mb-4 p-4 rounded-lg flex-row items-center justify-center shadow-sm"
-              >
+          >
             <FontAwesome6 name="plus" size={16} color="white" className="mr-2" />
             <Text className="text-white font-medium">Add New Group</Text>
-              </TouchableOpacity>
-            </View>
-            
+          </TouchableOpacity>
+        </View>
+
         {/* Create Group Modal */}
         <Modal
           visible={isGroupModalVisible}
@@ -422,7 +429,7 @@ const CreateContactForm = ({
             <View className="bg-white w-[90%] rounded-xl p-5">
               <View className="flex-row items-center justify-between mb-4">
                 <Text className="text-xl font-semibold text-gray-800">Create New Group</Text>
-                    <TouchableOpacity
+                <TouchableOpacity
                   onPress={() => {
                     setIsGroupModalVisible(false);
                     setNewGroupName('');
@@ -431,7 +438,7 @@ const CreateContactForm = ({
                   className="w-8 h-8 bg-gray-100 rounded-full items-center justify-center"
                 >
                   <FontAwesome6 name="xmark" size={16} color="#666" />
-                    </TouchableOpacity>
+                </TouchableOpacity>
               </View>
 
               <View className="mb-4">
@@ -453,8 +460,8 @@ const CreateContactForm = ({
                     value: item.id,
                   }))}
                   onSelect={setSelectedRole}
-                      />
-                    </View>
+                />
+              </View>
 
               <View className="flex-row justify-end space-x-3">
                 <TouchableOpacity
@@ -467,18 +474,18 @@ const CreateContactForm = ({
                 >
                   <Text className="text-gray-700 font-medium">Cancel</Text>
                 </TouchableOpacity>
-                
-                      <TouchableOpacity
+
+                <TouchableOpacity
                   onPress={handleCreateGroup}
                   className="bg-primary px-5 py-2 rounded-lg flex-row items-center"
-                      >
+                >
                   <Text className="text-white font-medium">Create Group</Text>
-                      </TouchableOpacity>
-                </View>
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
         </Modal>
-        
+
         {/* Address Information */}
         <View className="my-2.5">
           {!isFromInvoice && (

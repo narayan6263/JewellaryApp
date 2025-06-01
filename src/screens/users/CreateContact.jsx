@@ -24,15 +24,16 @@ const CreateContactForm = ({
   const dispatch = useDispatch();
   const [info, setInfo] = useState({});
   const [errors, setErrors] = useState({});
-  const validator = new SimpleReactValidator({
-    validators: {
-      role: {
-        message: 'Role is required.',
-        rule: (val) => val?.value !== undefined && val?.value !== null,
-      },
+
+  
+ const validator = new SimpleReactValidator({
+  validators: {
+    role: {
+      message: 'Role is required.',
+      rule: (val) => val?.value !== undefined && val?.value !== null,
     },
-    autoForceUpdate: this,
-  });
+  },
+});
   const { groups, statesList, cityList, loading } = useSelector(
     (state) => state.userSlices
   );

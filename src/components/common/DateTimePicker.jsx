@@ -7,18 +7,15 @@ const DatePickerComponent = ({
   name = "",
   value = null,
   onSelect,
-  maxDate,
+  open = false,
+  handleClose
 }) => {
-  // Allow dates up to 10 years in future
-  const maximumDate = moment().add(10, 'years').toDate();
-  
   // Parse initial date safely
   const initialDate = value ? moment(value).toDate() : new Date();
   const [date, setDate] = useState(initialDate);
-  const [showPicker, setShowPicker] = useState(false);
+  const maximumDate = moment().add(10, 'years').toDate();
 
   const onChange = (event, selectedDate) => {
-    setShowPicker(false);
     if (selectedDate) {
       const newDate = moment(selectedDate).toDate();
       setDate(newDate);
@@ -27,6 +24,7 @@ const DatePickerComponent = ({
         value: moment(newDate).format("YYYY-MM-DD")
       });
     }
+    handleClose();
   };
 
   // Format using moment.js
@@ -34,19 +32,13 @@ const DatePickerComponent = ({
 
   return (
     <View>
-      <TouchableOpacity onPress={() => setShowPicker(true)}>
-        <Text className="text-gray-600 text-sm font-medium">
-          {formattedDate}
-        </Text>
-      </TouchableOpacity>
-
-      {showPicker && (
+      {open && (
         <DateTimePicker
           value={date}
           mode="date"
           display="default"
           onChange={onChange}
-          maximumDate={maximumDate} // Now allows dates up to 10 years in future
+          maximumDate={maximumDate}
         />
       )}
     </View>

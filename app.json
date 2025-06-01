@@ -18,7 +18,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.celestristechnology.jwellerybills"
+      "bundleIdentifier": "com.celestristechnology.jwellerybills",
+      "buildNumber": "1"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +27,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.celestristechnology.jwellerybills",
+      "versionCode": 1,
       "permissions": [
         "INTERNET",
         "CAMERA",

@@ -48,7 +48,7 @@ const SelectInput = ({
             disabled && "text-gray-5"
           } max-w-[88%] text-xs w-full py-1.5`}
         >
-          {value ? value.label : placeholder}
+          {value ? `${value.label}${value.value?.price ? ` - ₹${value.value.price}` : ''}` : placeholder}
         </Text>
         <Entypo
           name={isModalVisible ? "chevron-up" : "chevron-down"}
@@ -70,11 +70,12 @@ const SelectInput = ({
           <View style={styles.modalContent} className="rounded-md">
             <FlatList
               data={data}
-              keyExtractor={(item) =>
-                typeof item.value == "number"
-                  ? item.value
-                  : item.value.toString()
-              }
+              keyExtractor={(item) => {
+                if (typeof item.value === 'object') {
+                  return item.value.price?.toString() || item.value.id?.toString() || JSON.stringify(item.value);
+                }
+                return item.value?.toString() || Math.random().toString();
+              }}
               renderItem={({ item }) => (
                 <TouchableOpacity onPress={() => handleSelect(item)}>
                   <Text
@@ -84,7 +85,7 @@ const SelectInput = ({
                         : "text-primary"
                     } capitalize text-base py-3 px-4`}
                   >
-                    {item.label}
+                    {item.label} {item.value?.price ? `- ₹${item.value.price}` : ''}
                   </Text>
                 </TouchableOpacity>
               )}
